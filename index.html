@@ -10,11 +10,21 @@
 
 <form>
     <h1>Bitte ausfüllen und absenden</h1>
-<div class="vorname">Vorname * <input type="text" name="Vorname" placeholder="Max"></div>
-<div class="name">Name* <input type="text" name="Name" placeholder="Mustermann"></div>
-<div class="strasse">Straße* <input type="text" name="Straße" placeholder="Musterstraße"></div>
-<div class="plz">Postleitzahl* <input type="text" name="Postleitzahl" placeholder="deutsche PLZ"></div>
-<div class="ort">Ort* <input type="text" name="Ort" placeholder="Musterdorf"></div>
+<div class="vorname">Vorname * <label>
+    <input type="text" name="Vorname" placeholder="Max">
+</label></div>
+<div class="name">Name* <label>
+    <input type="text" name="Name" placeholder="Mustermann">
+</label></div>
+<div class="strasse">Straße* <label>
+    <input type="text" name="Straße" placeholder="Musterstraße">
+</label></div>
+<div class="plz">Postleitzahl* <label>
+    <input type="text" name="Postleitzahl" placeholder="deutsche PLZ">
+</label></div>
+<div class="ort">Ort* <label>
+    <input type="text" name="Ort" placeholder="Musterdorf">
+</label></div>
 
     <div>Geschlecht*
             <p><input type="radio" id="m" name="Geschlecht" value="Männlich">
@@ -26,6 +36,7 @@
 </div>
     <!---Code modified: https://stackoverflow.com/questions/10967182/select-dropdown-that-redirects-without-javascript-->
 <div class="note">Ihre Note*
+    <label>
         <select name="Note">
             <option value="">...</option>
             <option value="1">seht gut</option>
@@ -35,20 +46,30 @@
             <option value="5">mangelhaft</option>
             <option value="6">ungenügend</option>
         </select>
-    </div>
+    </label>
+</div>
 <div class="abschluss">Abschluss
-    <select name="Abschluss">
-        <option value="">...</option>
-        <option value="Engineering">B.Eng</option>
-        <option value="Arts">B.A.</option>
-        <option value="Science">B.Sc.</option>
-        <option value="???">B.???</option>
-    </select></div>
-<div class="email">EmailId <input type="email" name="E-Mail" placeholder="mmustermann@hs-osnabrueck.de"></div>
-<div class="handy">Handy <input type="tel" name="Handy"></div>
-<div class="bemerkungen">Bemerkungen: <textarea name="Bemerkungen"></textarea></div>
+    <label>
+        <select name="Abschluss">
+            <option value="">...</option>
+            <option value="Engineering">B.Eng</option>
+            <option value="Arts">B.A.</option>
+            <option value="Science">B.Sc.</option>
+            <option value="???">B.???</option>
+        </select>
+    </label></div>
+<div class="email">EmailId <label>
+    <input type="email" name="E-Mail" placeholder="mmustermann@hs-osnabrueck.de">
+</label></div>
+<div class="handy">Handy <label>
+    <input type="tel" name="Handy">
+</label></div>
+<div class="bemerkungen">Bemerkungen: <label>
+    <textarea name="Bemerkungen"></textarea>
+</label></div>
 <button class="reset">Zurücksetzen</button>
 <button class="senden">Submit Form</button>
 </form>
+
 </body>
 </html>

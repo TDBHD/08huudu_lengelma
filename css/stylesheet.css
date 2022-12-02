@@ -22,38 +22,12 @@ form{
     padding: 1%;
 }
 
-.name{
+.name,.strasse,.plz,.ort,.note,.abschluss,.email,.handy,.bemerkungen{
     padding: 1%;
-}
 
-.strasse{
-    padding: 1%;
-}
 
-.plz{
-    padding: 1%;
 }
-
-.ort{
-    padding: 1%;
-}
-
-.note{
-    padding: 1%;
-}
-
-.abschluss{
-    padding: 1%;
-}
-
-.email{
-    padding: 1%;
-}
-
-.handy{
-    padding: 1%;
-}
-
-.bemerkungen{
-    padding: 1%;
+input{
+    border-radius: 5px;
+    padding: 10px;
 }
