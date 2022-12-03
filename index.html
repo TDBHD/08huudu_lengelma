@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulare und Eingabemasken</title>
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet"> </head>
 
-</head>
 <body>
-
 <form>
+
     <h1>Bitte ausfüllen und absenden</h1>
-<div class="vorname">Vorname * <label>
-    <input type="text" name="Vorname" placeholder="Max">
-</label></div>
-<div class="name">Name* <label>
-    <input type="text" name="Name" placeholder="Mustermann">
-</label></div>
-<div class="strasse">Straße* <label>
-    <input type="text" name="Straße" placeholder="Musterstraße">
-</label></div>
-<div class="plz">Postleitzahl* <label>
-    <input type="text" name="Postleitzahl" placeholder="deutsche PLZ">
-</label></div>
-<div class="ort">Ort* <label>
-    <input type="text" name="Ort" placeholder="Musterdorf">
-</label></div>
+    <div class="vorname formular">Vorname *
+        <label>
+            <input class="eingabe" type="text" name="Vorname" placeholder="Max"> </label>
+    </div>
+    <div class="name formular"> Name*
+        <label>
+            <input class="eingabe" type="text" name="Name" placeholder="Mustermann"> </label>
+    </div>
+    <div class="strasse formular">Straße*
+        <label>
+            <input class="eingabe" type="text" name="Straße" placeholder="Musterstraße"> </label>
+    </div>
+    <div class="plz formular">Postleitzahl*
+        <label>
+            <input class="eingabe" type="text" name="Postleitzahl" placeholder="deutsche PLZ"> </label>
+    </div>
+    <div class="ort formular">Ort*
+        <label>
+            <input class="eingabe " type="text" name="Ort" placeholder="Musterdorf"> </label>
+    </div>
 
-    <div>Geschlecht*
-            <p><input type="radio" id="m" name="Geschlecht" value="Männlich">
-            <label for="m"> männlich</label></p>
-            <p><input type="radio" id="w" name="Geschlecht" value="Weiblich">
-            <label for="w"> weiblich</label></p>
-            <p><input type="radio" id="d" name="Geschlecht" value="Divers">
-            <label for="d">divers</label></p>
-</div>
+    <div class="geschlecht formular">
+        <p class="geschlecht2">Geschlecht*</p>
+        <p>
+            <input class="radio" type="radio" id="m" name="Geschlecht" value="Männlich">
+            <label class="radio" for="m"> männlich</label>
+        </p>
+        <p>
+            <input class="radio" type="radio" id="w" name="Geschlecht" value="Weiblich">
+            <label class="radio" for="w"> weiblich</label>
+        </p>
+        <p>
+            <input class="radio" type="radio" id="d" name="Geschlecht" value="Divers">
+            <label class="radio" for="d">divers</label>
+        </p>
+    </div>
     <!---Code modified: https://stackoverflow.com/questions/10967182/select-dropdown-that-redirects-without-javascript-->
-<div class="note">Ihre Note*
-    <label>
-        <select name="Note">
-            <option value="">...</option>
-            <option value="1">seht gut</option>
-            <option value="2">gut</option>
-            <option value="3">befriedigend</option>
-            <option value="4">ausreichend</option>
-            <option value="5">mangelhaft</option>
-            <option value="6">ungenügend</option>
-        </select>
-    </label>
-</div>
-<div class="abschluss">Abschluss
-    <label>
-        <select name="Abschluss">
-            <option value="">...</option>
-            <option value="Engineering">B.Eng</option>
-            <option value="Arts">B.A.</option>
-            <option value="Science">B.Sc.</option>
-            <option value="???">B.???</option>
-        </select>
-    </label></div>
-<div class="email">EmailId <label>
-    <input type="email" name="E-Mail" placeholder="mmustermann@hs-osnabrueck.de">
-</label></div>
-<div class="handy">Handy <label>
-    <input type="tel" name="Handy">
-</label></div>
-<div class="bemerkungen">Bemerkungen: <label>
-    <textarea name="Bemerkungen"></textarea>
-</label></div>
-<button class="reset">Zurücksetzen</button>
-<button class="senden">Submit Form</button>
+    <div class="note formular">Ihre Note*
+        <label>
+            <select class="eingabe" name="Note">
+                <option value="">...</option>
+                <option value="1">seht gut</option>
+                <option value="2">gut</option>
+                <option value="3">befriedigend</option>
+                <option value="4">ausreichend</option>
+                <option value="5">mangelhaft</option>
+                <option value="6">ungenügend</option>
+            </select>
+        </label>
+    </div>
+    <div class="abschluss formular">Abschluss
+        <label>
+            <select class="eingabe" name="Abschluss">
+                <option value="">...</option>
+                <option value="Engineering">B.Eng</option>
+                <option value="Arts">B.A.</option>
+                <option value="Science">B.Sc.</option>
+                <option value="???">B.???</option>
+            </select>
+        </label>
+    </div>
+    <div class="email formular">EmailId
+        <label>
+            <input class="eingabe" type="email" name="E-Mail" placeholder="mmustermann@hs-osnabrueck.de"> </label>
+    </div>
+    <div class="handy formular">Handy
+        <label>
+            <input class="eingabe" type="tel" name="Handy"> </label>
+    </div>
+    <div class="bemerkungen formular">Bemerkungen:
+        <label>
+            <textarea class="eingabe" name="Bemerkungen"></textarea>
+        </label>
+    </div>
+    <button class="reset">Zurücksetzen</button>
+    <button class="senden">Submit Form</button>
 </form>
-
 </body>
+
 </html>
