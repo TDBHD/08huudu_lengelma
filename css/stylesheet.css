@@ -34,12 +34,7 @@ form .eingabe label{
     font-size: 14px;
 
 }
-.vorname,.name,.strasse,.plz,.ort,.note,.abschluss,.email,.handy,.bemerkungen{
-    padding: 10px;
 
-
-
-}
 input{
     border-radius: 10px;
     padding: 10px;
@@ -69,14 +64,17 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 10px 1px;
 }
 
 select{
     height: 40px;
+    width: 370px;
 
 }
 
 .geschlecht2{
-    justify-content: start;
+    float: left;
+    padding-top: 50px;
 }
+
