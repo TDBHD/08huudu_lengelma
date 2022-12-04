@@ -16476,3 +16476,20 @@ var arrayOfPlz = [['﻿01945','Kroppen'],
 ['99996','Obermehler'],
 ['99998','Körner'],
 ['99998','Mühlhausen/Thüringen']];
+
+function checkFormular()
+{
+    let plz =  document.getElementById("plz").value;
+    let ort =  document.getElementById("ort").value;
+
+    for (let i=0; i<arrayOfPlz.length; i++) {
+        const plzortArray = arrayOfPlz[i];
+        if (!plzortArray.includes(ort) && !plzortArray.includes(plz)) {
+            alert("Ort und PLZ konnten nicht im Postleitzahlenregister gefunden werden.");
+            if (plzortArray.includes(ort) && !plzortArray.includes(plz)) {
+                alert("Ort und PLZ passen nicht überein \n " +
+                    "Meinten Sie" + plz + " " + ort);
+            }
+        }
+    }
+}

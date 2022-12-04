@@ -8,7 +8,6 @@
 
 <body>
 <form id="form">
-
     <h1>Bitte ausfüllen und absenden</h1>
     <div class="vorname formular">Vorname *
         <label>
@@ -31,7 +30,7 @@
             <input class="eingabe " type="text" name="Ort" placeholder="Musterdorf"> </label>
     </div>
     <p class="geschlecht2">Geschlecht*</p>
-    <div class="geschlecht formular">
+    <div class="geschlecht formular" id="geschlecht">
 
         <p>
             <input class="radio" type="radio" id="m" name="Geschlecht" value="Männlich">
@@ -47,7 +46,7 @@
         </p>
     </div>
 
-    <div class="note formular">Ihre Note*
+    <div class="note formular" >Ihre Note*
         <label>
             <select class="" name="Note">
                 <option value="">...</option>
@@ -62,16 +61,16 @@
     </div>
     <div class="abschluss formular">Abschluss
         <label>
-            <select class="" name="Abschluss">
-                <option value=""            id="keine">...</option>
-                <option value="Engineering" id="eng">B.Eng</option>
-                <option value="Arts"        id="art">B.A.</option>
-                <option value="Science"     id="science">B.Sc.</option>
-                <option value="???"         id="andere">B.???</option>
+            <select class="" name="Abschluss" id="abschluss">
+                <option value="keine"            id="keine">...</option>
+                <option value="B.Eng" id="eng">B.Eng</option>
+                <option value="B.A."        id="art">B.A.</option>
+                <option value="B.Sc"     id="science">B.Sc.</option>
+                <option value="B.???"         id="andere">B.???</option>
             </select>
         </label>
     </div>
-    <div class="email formular">EmailId
+    <div class="email formular" >EmailId
         <label>
             <input class="eingabe" type="email" name="E-Mail" placeholder="mmustermann@hs-osnabrueck.de" id="email"> </label>
     </div>
@@ -87,19 +86,11 @@
 
     <div class="buttons">
     <input id="reset" type="reset" value="Zurücksetzen" class="reset">
-    <input type="submit" value="Submit Form" class="senden" onclick="anzeigen()">
-    </div>
-
-    <div id="center">
-        <div id="popUp">
-            <div id="popUpText"></div>
-            <div id="popUpBtn" class="popUpBtnUnclicked">
-                <button type="button" id="btn">OK</button>
-            </div>
-        </div>
+    <input type="submit" value="Submit Form" class="senden" onclick="checkFormular(); return popUpText()">
     </div>
 </form>
 
 </body>
-
+<script src="./js/function.js"></script>
+<script src="./js/plzarray.js"></script>
 </html>
