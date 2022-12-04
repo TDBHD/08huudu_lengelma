@@ -7,7 +7,7 @@
     <link href="css/stylesheet.css" rel="stylesheet"> </head>
 
 <body>
-<form>
+<form id="form">
 
     <h1>Bitte ausfüllen und absenden</h1>
     <div class="vorname formular">Vorname *
@@ -63,17 +63,17 @@
     <div class="abschluss formular">Abschluss
         <label>
             <select class="" name="Abschluss">
-                <option value="">...</option>
-                <option value="Engineering">B.Eng</option>
-                <option value="Arts">B.A.</option>
-                <option value="Science">B.Sc.</option>
-                <option value="???">B.???</option>
+                <option value=""            id="keine">...</option>
+                <option value="Engineering" id="eng">B.Eng</option>
+                <option value="Arts"        id="art">B.A.</option>
+                <option value="Science"     id="science">B.Sc.</option>
+                <option value="???"         id="andere">B.???</option>
             </select>
         </label>
     </div>
     <div class="email formular">EmailId
         <label>
-            <input class="eingabe" type="email" name="E-Mail" placeholder="mmustermann@hs-osnabrueck.de"> </label>
+            <input class="eingabe" type="email" name="E-Mail" placeholder="mmustermann@hs-osnabrueck.de" id="email"> </label>
     </div>
     <div class="handy formular">Handy
         <label>
@@ -86,8 +86,18 @@
     </div>
 
     <div class="buttons">
-    <button class="reset">Zurücksetzen</button>
-    <button class="senden">Submit Form</button>
+    <input id="reset" type="reset" value="Zurücksetzen" class="reset">
+    <input type="submit" value="Submit Form" class="senden" onclick="anzeigen()">
+    </div>
+
+    <div id="center">
+        <div id="popUp">
+            <div id="popUpText"></div>
+            <div id="popUpBtn" class="popUpBtnUnclicked">
+                <button type="button" id="btn">OK</button>
+            </div>
+        </div>
+    </div>
 </form>
 
 </body>

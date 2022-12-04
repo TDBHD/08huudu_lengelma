@@ -77,7 +77,7 @@ select{
     padding-top: 50px;
 }
 
-button{
+.buttons input{
     background-color: dimgray;
     padding: 20px 40px;
     color: white;
